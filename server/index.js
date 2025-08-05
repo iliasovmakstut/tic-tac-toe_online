@@ -199,7 +199,9 @@ function assignToRoom(socket) {
         : rooms[usersIds[socket.id].roomId].player0.id;
 }
 
-app.get("/", (req, res) => {});
+app.get("/", (req, res) => {
+  res.send("Server is alive!");
+});
 
 server.listen(port, () => {
   console.log("server is running on port: " + port);
