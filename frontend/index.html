@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main class="container">
+      <canvas id="gameCanvas"></canvas>
+      <div class="input__container">
+        <input type="text" placeholder="Username" />
+        <button class="input__send">Call me that!</button>
+      </div>
+      <div class="gameover__container display-none">
+        <h3 class="gameover__title">You won!</h3>
+        <button class="gameover__play-again">Again!</button>
+      </div>
+    </main>
+    <script
+      src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+      integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
