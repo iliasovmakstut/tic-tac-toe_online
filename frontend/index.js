@@ -1,4 +1,4 @@
-const socket = io("http://localhost:5000");
+const socket = io("https://tic-tac-toe-online-woc7.onrender.com");
 const inputContainer = document.querySelector(".input__container");
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
