@@ -6,7 +6,7 @@ import { dirname, join } from "node:path";
 import { v4 as uuidv4, v6 as uuidv6 } from "uuid";
 import cors from "cors";
 
-const port = 5000;
+const port = process.env.PORT || 10000;
 const app = express();
 app.use(cors());
 const server = createServer(app);
